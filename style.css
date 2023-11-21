@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(/background.img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+    /* scroll-behavior:smooth; */
+    position: relative;
+
+}
+.todo-app{
+    width: 100%;
+    max-width: 490px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 35px 30px 70px;
+    border-radius: 50px;
+}
+.todo-app h2{
+    color: #399139;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    gap: 0.7rem;
+    user-select: none;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 12px ;
+    border-bottom: 1px solid #ccc;
+    user-select: none;
+}
+input{
+    flex: 1;
+    border:none;
+    outline:none;
+    background: transparent;
+    color: #1f921f;
+    padding: 10px;
+    font-size: 17px;
+    user-select: none;
+}
+.row input::placeholder{
+    color: #b3b2b2;
+    font-size: 16px;
+    user-select: none;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 35px;
+    background: #399139;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    user-select: none;
+
+}
+ul li{
+    list-style: none;
+    font-size: 15.5px;
+    padding: 11px 8px 15px 40px;
+    margin: 23px 0px;
+    border-bottom: #555;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #1f921f;
+    border-bottom: 1px solid #ccc;
+}
+ul li:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    color: #555;
+    background-image: url(/bx-circle.svg);
+    background-size: cover;
+    top: 9px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul li.checked::before{
+    background-image: url(/bx-check-circle.svg);
+    color: #555;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: #aaf3aa;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
